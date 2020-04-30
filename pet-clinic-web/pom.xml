@@ -32,6 +32,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>guru.springframework</groupId>
+            <artifactId>pet-clinic-data</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
 
 </project>
