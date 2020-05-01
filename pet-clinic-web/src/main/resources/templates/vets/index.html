@@ -7,5 +7,23 @@
 <body>
 <h1 th:text="'List of Vets'"> List of vets..</h1>
 
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--? in vets? is used for nullable objects-->
+    <tr th:each="vets : ${vets}">
+        <td th:text="${vets?.id}">1</td>
+        <td th:text="${vets?.firstName}">Hugh</td>
+        <td th:text="${vets?.lastName}">Wet</td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
